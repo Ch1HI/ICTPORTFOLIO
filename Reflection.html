@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICT Portfolio</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="muffin.png">
+
+    <!-- Custom Styles -->
+    <style>
+        /* General page settings */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        /* Body Background: Starry Image */
+        body {
+            background-image: url('Starry.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        /* Header Styling with Fading White */
+        header {
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3)); /* Fading white */
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between; /* Separate logo and navigation */
+            align-items: center;
+        }
+
+        .logo-img {
+            width: 250px;
+            height: auto;
+        }
+
+        /* Navigation Links */
+        .header-links-main {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .header-link-item {
+            margin: 0 15px;
+        }
+
+        .header-link {
+            font-size: 18px;
+            color: #0D0A35; /* Custom hyperlink color */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .header-link:hover {
+            color: #4169e1; /* Deep blue on hover */
+        }
+
+        /* Transparent White Background for Welcome Section */
+        .welcome-container {
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+            padding: 20px;
+            border-radius: 10px;
+            width: 60%;
+            text-align: center;
+            margin-top: 120px; /* To push it below the header */
+        }
+
+        /* Individual font for Welcome Text */
+        .welcome-text {
+            font-size: 50px;
+            color: #1e90ff;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /* Individual font for Description Text */
+        .description {
+            font-size: 20px;
+            color: #2f4f4f; /* Muted dark gray */
+            font-family: Arial, sans-serif;
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+
+        .description u {
+            text-decoration-color: #1e90ff; /* Underline matches link color */
+        }
+
+        /* Reflection Container with Transparent White Background */
+        .reflection-container {
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+            padding: 20px;
+            border-radius: 10px;
+            width: 60%;
+            margin: 40px auto; /* Center the container */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add some shadow for depth */
+        }
+
+        /* Forms Container with Transparent White Background */
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+            padding: 20px;
+            border-radius: 10px;
+            width: 60%;
+            margin: 20px auto; /* Center the container */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add some shadow for depth */
+        }
+
+        /* Table styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+            }
+
+            .header-links-main {
+                margin-top: 10px;
+                flex-direction: column;
+            }
+
+            .header-link-item {
+                margin: 10px 0;
+            }
+
+            .welcome-container {
+                width: 80%;
+            }
+
+            .welcome-text {
+                font-size: 36px;
+            }
+
+            .description {
+                font-size: 16px;
+            }
+
+            .reflection-container,
+            .form-container {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header id="header" class="header">
+    <!-- Logo on the left -->
+    <a href="IctPortfolio.html">
+        <img class="logo-img" alt="Ict Portfolio.com" src="Logo.png" height="10" width="20">
+    </a>
+
+    <!-- Navigation on the right -->
+    <nav>
+        <ul class="header-links-main">
+            <li class="header-link-item">
+                <a href="ICTPortfolio1.html" class="header-link">Home</a>
+            </li>
+            <li class="header-link-item">
+                <a href="AboutMe.html" class="header-link">Traveller</a>
+            </li>
+            <li class="header-link-item">
+                <a href="Lessons.html" class="header-link">Lessons</a>
+            </li>
+            <li class="header-link-item">
+                <a href="Adventures.html" class="header-link">Adventures</a>
+            </li>
+            <li class="header-link-item">
+                <a href="Reflection.html" class="header-link">Reflection</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Centered Welcome Section with Transparent White Background -->
+<div class="welcome-container">
+    <p class="welcome-text">Welcome to My ICT Portfolio!</p>
+    <p class="description">
+       Take a peek in my journey through the first quarter of grade 9! <br>
+        Click any button on the top right corner to unveil the mysteries that await!
+    </p>
+</div>
+
+<!-- Reflection Section with Transparent White Background -->
+<div class="reflection-container">
+    <h2>Reflection</h2>
+    <ol>
+        <li> XHTML VS HTML
+            <ul>
+                <li>XHTML (Extensible Hypertext Markup Language) represents a more structured evolution of HTML, enforcing stricter syntax rules such as proper nesting and closing of tags, which enhances code readability and maintainability. This adherence to standards, promoted by the W3C, ensures consistent rendering across different browsers and devices, making web content more accessible. While XHTML prepares developers for modern web technologies and improves future-proofing, its strict requirements can slow down the development process and create compatibility challenges with older browsers. Overall, XHTML offers a reliable alternative to HTML for developers focused on creating robust and standards-compliant web applications.</li>
+            </ul>
+        </li>
+        <li>LIST
+            <ul>
+                <li>HTML lists, including ordered and unordered lists, play a crucial role in organizing content on a webpage. From a student's perspective, learning to use these lists effectively enhances not only the visual structure of my projects but also improves readability and user experience. Ordered lists are perfect for sequences, such as steps in a process, while unordered lists are ideal for presenting related items without implying a specific order. The ability to nest lists allows for more complex information to be displayed clearly, making it easier for viewers to understand hierarchical relationships. Overall, mastering HTML lists is an essential skill that contributes to creating well-structured and accessible web content.</li>
+            </ul>
+        </li>
+        <li> FORMS
+            <ul>
+                <li> HTML forms are an essential aspect of web development, allowing users to interact with websites by submitting information. As a student, learning to create and manage forms has been invaluable for understanding user input and data collection. Forms enable functionalities such as registration, login, and feedback submission, which are critical for any interactive website. The various input types, such as text fields, checkboxes, and radio buttons, provide flexibility in gathering different kinds of data. Additionally, mastering form validation ensures that users provide accurate information, enhancing the overall user experience. Overall, understanding HTML forms has equipped me with the skills to create dynamic web applications that engage users effectively.</li>
+            </ul>
+        </li>
+        <li>HYPERLINKS
+            <ul>
+                <li> HTML hyperlinks are a fundamental feature of the web, serving as the connective tissue that links different pages and resources together. As a student, learning about hyperlinks has opened my eyes to how navigation works on websites and the importance of creating a seamless user experience. Hyperlinks allow us to access a wealth of information with just a click, making the web an interconnected space. Understanding how to use different types of links, such as internal links to navigate within a site or external links to reference other sites, has been crucial in enhancing my web development skills. Additionally, learning about anchor tags and their attributes has taught me how to create user-friendly navigation and improve the accessibility of my projects. Overall, mastering HTML hyperlinks has greatly enriched my understanding of web design and usability.</li>
+            </ul>
+        </li>
+        <li>OVERALL
+            <ul>
+                <li>Reflecting on my first quarter as a student learning HTML, I’ve come to appreciate the foundational elements that make up web development. Starting with HTML lists, I learned how to organize information clearly and effectively, which is essential for creating user-friendly content. The introduction to HTML forms was enlightening, as it showcased how to gather user input and interact with visitors on a website, emphasizing the importance of user engagement. Exploring hyperlinks deepened my understanding of navigation on the web; I realized how they connect information and enhance the browsing experience, making resources easily accessible. Finally, studying XHTML introduced me to stricter syntax rules, which highlighted the significance of writing clean and valid code for better compatibility and functionality across different browsers. Overall, these lessons have not only equipped me with practical skills but also ignited my passion for web development, setting a solid foundation for my future learning in this field </li>
+            </ul>
+       </li>
+    </ol>
+</div>
+
+<!-- Forms Section with Transparent White Background -->
+<div class="form-container">
+    <h1 align="center">Survey</h1>
+    <form action="corrales ict9 portfolio surveydone.html" method="get">
+        <div style="display: flex; flex-direction: column; align-items: center;">
+            Name: <input name="textbox1" type="text" style="width: 100%; max-width: 400px;"><br><br>
+            Gender:<br>
+            <select name="gender" size="1" style="width: 100%; max-width: 400px;">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="anonymous">Prefer not to say</option>
+            </select><br><br>
+            Rate the content of the website:<br>
+            <div style="text-align: center;">
+                <input type="radio" name="radio1">Amazing
+                <input type="radio" name="radio1">Good
+                <input type="radio" name="radio1">Bad 
+                <input type="radio" name="radio1">Awful<br><br>
+            </div>
+            Rate the functionality of the website:<br>
+            <div style="text-align: center;">
+                <input type="radio" name="radio2">Amazing
+                <input type="radio" name="radio2">Good
+                <input type="radio" name="radio2">Bad
+                <input type="radio" name="radio2">Awful<br><br>
+            </div>
+            Rate the overall experience of the website:<br>
+            <div style="text-align: center;">
+                <input type="radio" name="radio3">Amazing
+                <input type="radio" name="radio3">Good
+                <input type="radio" name="radio3">Bad
+                <input type="radio" name="radio3">Awful<br><br>
+            </div>
+            What part of the website needs improvement?<br>
+            <textarea name="tellus" rows="5" cols="30" wrap="hard" style="width: 100%; max-width: 400px;">Put your response here.</textarea><br><br>
+            <input type="submit" value="Submit!" style="width: 150px;">
+            <input type="reset" value="Clear/Reset" style="width: 150px;">
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
